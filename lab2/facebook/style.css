@@ -1,0 +1,141 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Фон страницы */
+body {
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Контейнер */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Левая часть ---Текст Facebook--- */
+.left {
+    max-width: 500px;
+}
+
+.left h1 {
+    color: #1877f2;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 20px;
+    color: #606770;
+}
+
+/* Правая часть (форма) */
+.right {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Внутренний блок формы */
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Поля ввода */
+.right input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Кнопка входа */
+.right button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    background: #1877f2;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.right button:hover {
+    background: #166fe5;
+}
+
+/* Ссылка ---Забыли пароль?--- */
+.right a {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    font-size: 14px;
+}
+
+/* Разделительная линия */
+hr {
+    margin: 15px 0;
+    border: 0.5px solid #dddfe2;
+}
+
+/* Кнопка "Создать новый аккаунт" */
+.signup {
+    background: #42b72a;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.signup:hover {
+    background: #36a420;
+}
+
+/* Новый контейнер внизу страницы */
+.bottom-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #606770;
+    width: 100%;
+}
+
+/* Ссылка "Создать страницу" */
+.bottom-container a {
+    color: #1877f2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom-container a:hover {
+    text-decoration: underline;
+}

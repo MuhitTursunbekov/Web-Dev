@@ -105,8 +105,8 @@ hr {
 /* Кнопка "Создать новый аккаунт" */
 .signup {
     background: #42b72a;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 14px;
+    border-radius: 20px;
     font-size: 16px;
     color: white !important;
     font-weight: bold;

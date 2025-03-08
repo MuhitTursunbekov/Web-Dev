@@ -1,0 +1,7 @@
+<div>
+    <h3>{{ title }}</h3>
+    <p>Категория: {{ category }}</p>
+    <p>Статус: {{ status }}</p>
+    <button (click)="markCompleted()">Отметить как выполненное</button>
+    <a [routerLink]="['/task', id]">Посмотреть детали</a>
+  </div>

@@ -1,0 +1,9 @@
+<app-launch-filter (filter)="filterLaunches($event)"></app-launch-filter>
+
+    <h2>SpaceX Launches</h2>
+    <div *ngFor="let launch of filteredLaunches">
+      <p>
+        Mission: {{ launch.mission_name }} - Success:
+        {{ launch.launch_success }}
+      </p>
+    </div>

@@ -1,11 +1,18 @@
 from django.urls import path
-from .views import CompanyListView, CompanyDetailView, VacancyListByCompanyView, VacancyListView, VacancyDetailView, TopTenVacanciesView
+from .views import companies_list, company_detail, vacancies_by_company, VacanciesList, VacancyDetailView, VacancyTopTenView
 
 urlpatterns = [
-    path('companies/', CompanyListView.as_view(), name='company-list'),
-    path('companies/<int:id>/', CompanyDetailView.as_view(), name='company-detail'),
-    path('companies/<int:id>/vacancies/', VacancyListByCompanyView.as_view(), name='vacancy-list-by-company'),
-    path('vacancies/', VacancyListView.as_view(), name='vacancy-list'),
-    path('vacancies/<int:id>/', VacancyDetailView.as_view(), name='vacancy-detail'),
-    path('vacancies/top_ten/', TopTenVacanciesView.as_view(), name='top-ten-vacancies'),
+    path('companies', companies_list),
+    path('companies/<int:pk>/', company_detail),
+    path('companies/<int:pk>/vacancies/', vacancies_by_company),
+    path('vacancies/', VacanciesList.as_view()),
+    path('vacancies/<int:pk>/', VacancyDetailView.as_view()),
+    path('vacancies/top_ten', VacancyTopTenView.as_view())
 ]
+
+# http://127.0.0.1:8000/api/companies
+# http://127.0.0.1:8000/api/companies/2
+# http://127.0.0.1:8000/api/companies/2/vacancies
+# http://127.0.0.1:8000/api/vacancies/
+# http://127.0.0.1:8000/api/vacancies/1
+# http://127.0.0.1:8000/api/vacancies/top_ten
